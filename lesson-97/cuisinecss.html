@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>World of Cuisine</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Navbar */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            background-color: #007BFF;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        /* Intro Section */
+        #intro {
+            text-align: center;
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Main Section */
+        #main-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .main-section-content {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-section-content h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Chefs Section */
+        #chefs {
+            display: flex;
+            gap: 20px;
+        }
+
+        .chef-info {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .chef-info img {
+            border-radius: 50%;
+        }
+
+        /* Videos Section */
+        #videos iframe {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background: #007BFF;
+            color: white;
+        }
+
+        table td {
+            background: #f9f9f9;
+        }
+
+        /* Best Cuisines Section */
+        ol {
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer span {
+            font-weight: bold;
+        }
+
+        footer address {
+            font-style: normal;
+        }
+
+        /* Button */
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!--Heading-->
+        <header>
+            <h1>World of Cuisine</h1>
+            <img src="" alt="Delicious cuisines" width="300">
+        </header>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cuisine" target="_blank">Learn More</a></li>
+                <li><a href="#">Popular Recipes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--Intro-->
+        <div id="intro">
+            <h2>Welcome to the World of Cuisine</h2>
+            <p>Explore the diverse and flavorful world of cuisines from across the globe. From traditional recipes to
+                modern twists, cuisine brings people together.</p>
+        </div>
+        <!--Main Section-->
+        <div id="main-section">
+            <!--content-1-->
+            <div class="main-section-content">
+                <h2>Meet Our Chefs</h2>
+                <div id="chefs">
+                    <div class="chef-info">
+                        <div>
+                            <img src="" alt="Chef John" width="100">
+                        </div>
+                        <div>
+                            <h3>Chef John</h3>
+                            <p>Specializes in Italian and French cuisines. Known for his creative pasta dishes and
+                                mouthwatering desserts.</p>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <div>
+                            <img src="" alt="Chef Maria" width="100">
+                        </div>
+                        <div>
+                            <h3>Chef Maria</h3>
+                            <p>An expert in Asian cuisine, Chef Maria brings the flavors of the East with her sushi and
+                                stir-fry recipes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--content-2-->
+            <div id="cuisine-reviews" class="main-section-content">
+                <h2>Favorite Cuisines</h2>
+                <h3>Italian Cuisine</h3>
+                <p><strong>James: </strong> <q>The pizzas and pastas are simply out of this world!</q></p>
+                <p><strong>Sophia: </strong> <q>I adore the fresh ingredients and rich flavors.</q></p>
+            </div>
+            <!--content-3-->
+            <div id="videos" class="main-section-content">
+                <h2>Related Videos</h2>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TE7d0g4DXs4?si=91XOD-_PLRW6UvBu"
+                        title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!--content-4 (tables)-->
+            <div class="main-section-content">
+                <h2>Opening Timings</h2>
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <td>10am - 8pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>10am - 8pm</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>10am - 8pm</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>10am - 8pm</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>10am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>10am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Best Cuisine Section-->
+        <div id="best-cuisines">
+            <h2>Top Cuisines</h2>
+            <ol>
+                <li><b>Italian Cuisine</b>: Known for pizzas and pastas.</li>
+                <li><b>Chinese Cuisine</b>: Famous for noodles and dim sum.</li>
+                <li><b>Mexican Cuisine</b>: Loved for tacos and nachos.</li>
+                <li><b>Indian Cuisine</b>: Renowned for spices and curries.</li>
+            </ol>
+        </div>
+        <footer>
+            <p><span>Contact Us:</span> Chef Maria</p>
+            <p><span>Phone No:</span> +1124533</p>
+            <address>123 Culinary Street, Flavor City, Foodland</address>
+        </footer>
+        <button>Enquiry</button>
+    </div>
+</body>
+
+</html>
